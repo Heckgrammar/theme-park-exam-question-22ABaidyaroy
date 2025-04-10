@@ -20,6 +20,20 @@
             // 3: 6 people
             // Commit your changes and add screnshot evidence of your program running to the Readme
 
+            int numOfpeople;
+            int totalCost;
+            Console.WriteLine("How many people in your group?: ");
+            numOfpeople = Convert.ToInt32(Console.ReadLine());
+            if (numOfpeople < 6)
+            {
+                totalCost = numOfpeople * 15;
+            }
+            else
+            {
+                totalCost = numOfpeople * 15 - 5;
+            }
+            Console.WriteLine(totalCost);
+
         }
     }
 }
